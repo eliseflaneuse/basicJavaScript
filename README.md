@@ -1,8 +1,8 @@
 # basicJavaScript
-freeCodeCamp Basic JavaScript part of the  JavaScript Algorithms and Data Structures Course
+<h1> freeCodeCamp Basic JavaScript part of the  JavaScript Algorithms and Data Structures Course </h1>
 
 
-What is included?
+<h2>What is included?</h2>
 
 Comment Your JavaScript Code <br>
 Declare JavaScript Variables <br>
