@@ -4,7 +4,7 @@ freeCodeCamp Basic JavaScript part of the  JavaScript Algorithms and Data Struct
 
 What is included?
 
-Comment Your JavaScript Code
+Comment Your JavaScript Code <br>
 Declare JavaScript Variables
 Storing Values with the Assignment Operator
 Assigning the Value of One Variable to Another
