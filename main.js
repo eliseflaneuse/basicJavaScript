@@ -586,3 +586,125 @@ function sum(arr, n) {
 console.log(sum([2, 3, 4, 5], 3));
 
 // Profile Lookup
+const contacts = [
+    {
+      firstName: "Harry",
+      lastName: "Potter",
+      number: "0994372684",
+      likes: ["Hogwarts", "Magic", "Hagrid"],
+    },
+    {
+      firstName: "Sherlock",
+      lastName: "Holmes",
+      number: "0487345643",
+      likes: ["Intriguing Cases", "Violin"],
+    }
+    
+  ];
+  
+function lookUpProfile(name, prop) {
+    for (let i = 0; i < contacts.length; i++) {
+      if (contacts[i].firstName === name){
+        if (contacts[i].hasOwnProperty(prop)) {
+          return contacts[i][prop];
+        }   else {
+          return 'No such property';
+         }
+      } 
+    } 
+    return 'No such contact';
+  }
+  
+console.log(lookUpProfile("Harry", "likes"));
+
+// Getting a random number between 0 (inclusive) and 1 (exclusive)
+
+function getRandom() {
+    return Math.random();
+  }
+
+// Generate Random Whole Numbers with JavaScript
+
+function randomWholeNum() {
+    return Math.floor(Math.random() * 10);
+  }
+
+// Generate Random Whole Numbers within a Range
+
+function randomRange(myMin, myMax) {
+    return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+  }
+console.log(randomRange(10, 3));
+
+// Use the parseInt Function
+
+function convertToInteger(str) {
+    return parseInt(str);
+  }
+console.log(convertToInteger("72.036"));
+
+// Use the parseInt Function with a Radix - in this example we are converting the number 10011 from the binary system into the decimal system.
+
+function convertToInteger2(str) {
+    return parseInt(str, 2);
+  }
+console.log(convertToInteger2("10011"));
+
+/* Use the Conditional (Ternary) Operator 
+The syntax is a ? b : c, where a is the condition, 
+b is the code to run when the condition returns true, 
+and c is the code to run when the condition returns false.*/
+
+function findGreater(a, b) {
+    return a > b ? "a is greater" : "b is greater or equal";
+  }
+console.log(findGreater(1, 2));
+
+
+function checkEqual(a, b) {
+    return a === b ? 'Equal' : 'Not Equal';
+  }
+console.log(checkEqual(1, 2));
+
+// Use Multiple Conditional (Ternary) Operators
+
+function findGreaterOrEqual(a, b) {
+    return (a === b) ? "a and b are equal" 
+      : (a > b) ? "a is greater" 
+      : "b is greater";
+  }
+console.log(findGreaterOrEqual(1, 2));
+
+function checkSign(num) {
+    return (num > 0) ? 'positive'
+    : (num < 0) ? 'negative'
+    : 'zero';
+  }
+console.log(checkSign(10));
+
+// Use Recursion to Create a Countdown
+
+function countdown(n){
+    if (n >= 1) {
+      const countArray = countdown(n - 1);
+      countArray.unshift(n);
+      return countArray;
+    } else {
+      return [];
+    }
+  }
+console.log(countdown(10));
+
+// Use Recursion to Create a Range of Numbers
+
+function rangeOfNumbers(startNum, endNum) {
+    if (endNum < startNum) {
+     return [];
+   } else {
+     const numbers = rangeOfNumbers(startNum, endNum - 1);
+     numbers.push(endNum);
+     return numbers;
+   }
+ };
+
+console.log(rangeOfNumbers(2, 25));
