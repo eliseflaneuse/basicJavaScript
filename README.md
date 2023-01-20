@@ -99,3 +99,13 @@ Count Backwards With a For Loop <br>
 Iterate Through an Array with a For Loop <br>
 Nesting For Loops <br>
 Iterate with JavaScript Do...While Loops <br>
+Replace Loops using Recursion <br>
+Generate Random Fractions with JavaScript <br>
+Generate Random Whole Numbers with JavaScript <br>
+Generate Random Whole Numbers within a Range <br>
+Use the parseInt Function <br>
+Use the parseInt Function with a Radix <br>
+Use the Conditional (Ternary) Operator <br>
+Use Multiple Conditional (Ternary) Operators <br>
+Use Recursion to Create a Countdown <br>
+Use Recursion to Create a Range of Numbers <br>
