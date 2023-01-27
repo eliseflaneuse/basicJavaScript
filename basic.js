@@ -709,4 +709,4 @@ function rangeOfNumbers(startNum, endNum) {
 
 console.log(rangeOfNumbers(2, 25));
 
-// Continue on ES6 repository
+// Continue on ES6 repository!
