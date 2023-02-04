@@ -111,3 +111,22 @@ Use Recursion to Create a Countdown <br>
 Use Recursion to Create a Range of Numbers <br>
 
 <h3>Basic II</h3>
+
+Compare Scopes of the var and let Keywords <br>
+Mutate an Array Declared with const <br>
+Prevent Object Mutation <br>
+Use Arrow Functions to Write Concise Anonymous Functions <br>
+Write Arrow Functions with Parameters <br>
+Set Default Parameters for Your Functions <br>
+Use the Rest Parameter with Function Parameters <br>
+Use the Spread Operator to Evaluate Arrays In-Place <br>
+Use Destructuring Assignment to Extract Values from Objects <br>
+Use Destructuring Assignment to Assign Variables from Objects <br>
+Use Destructuring Assignment to Assign Variables from Nested Objects <br>
+Use Destructuring Assignment to Assign Variables from Arrays <br>
+Destructuring via rest elements <br>
+Use Destructuring Assignment to Pass an Object as a Function's Parameters <br>
+Create Strings using Template Literals <br>
+Write Concise Object Literal Declarations Using Object Property Shorthand <br>
+Write Concise Declarative Functions with ES6 <br>
+Use class Syntax to Define a Constructor Function <br>
