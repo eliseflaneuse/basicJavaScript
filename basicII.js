@@ -220,3 +220,6 @@ const carrot = new Vegetable('carrot');
 console.log(carrot);
 
 // Use getters and setters to Control Access to an Object
+
+
+
