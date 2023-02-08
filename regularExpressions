@@ -145,4 +145,8 @@ console.log(result9);
 
 // 12. Match Characters that Occur One or More Times
 
+let difficultSpelling = "Mississippi";
+let myRegex4 = /s+/gi; 
+let result10 = difficultSpelling.match(myRegex4);
+console.log(result10);
 
