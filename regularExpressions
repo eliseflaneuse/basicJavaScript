@@ -1,0 +1,122 @@
+/* 
+1. Using the Test Method
+2. Match Literal Strings
+3. Match a Literal String with Different Possibilities
+4. Ignore Case While Matching
+5. Extract Matches
+6. Find More Than the First Match
+7. Match Anything with Wildcard Period
+8. Match Single Character with Multiple Possibilities
+9. Match Letters of the Alphabet
+10. Match Numbers and Letters of the Alphabet
+11 .Match Single Characters Not Specified
+12. Match Characters that Occur One or More Times
+13. Match Characters that Occur Zero or More Times
+14. Find Characters with Lazy Matching
+15. Find One or More Criminals in a Hunt
+16. Match Beginning String Patterns
+17. Match Ending String Patterns
+18. Match All Letters and Numbers
+19. Match Everything But Letters and Numbers
+20. Match All Numbers
+21. Match All Non-Numbers
+22. Restrict Possible Usernames
+23. Match Whitespace
+24. Match Non-Whitespace Characters
+25. Specify Upper and Lower Number of Matches
+26. Specify Only the Lower Number of Matches
+27.Specify Exact Number of Matches
+28. Check for All or None
+29. Positive and Negative Lookahead
+30. Check For Mixed Grouping of Characters
+31. Reuse Patterns Using Capture Groups
+32.Use Capture Groups to Search and Replace
+33. Remove Whitespace from Start and End */
+
+// 1. Using the Test Method
+
+/* Regular Expression /(reg)ex/
+
+A regular expression is a sequence of characters that specifies a search pattern in text. 
+Usually such patterns are used by string-searching algorithms for "find" or 
+"find and replace" operations on strings, or for input validation.*/
+
+let testStr = "freeCodeCamp";
+let testRegex = /Code/;
+console.log(testRegex.test(testStr));
+
+// 2. Match Literal Strings - this property is case sensitive
+
+let waldoIsHiding = "Somewhere Waldo is hiding in this text.";
+let waldoRegex = /Waldo/; // Change this line
+let result = waldoRegex.test(waldoIsHiding);
+console.log(result);
+
+// 3. Match a Literal String with Different Possibilities - You can you the OR operator |
+
+let petString = "James has a pet cat.";
+let petRegex = /dog|cat|bird|fish/; 
+let result2 = petRegex.test(petString);
+console.log(result2)
+
+// 4. Ignore Case While Matching - Using the /ignorecase/i
+
+let myString = "freeCodeCamp";
+let fccRegex = /freeCodeCamp/i;
+let result3 = fccRegex.test(myString);
+console.log(result3);
+
+// 5. Extract Matches - .match() method (only extract the first match)
+
+console.log("Hello, World!".match(/Hello/));
+let ourStr = "Regular expressions";
+let ourRegex = /expressions/;
+console.log(ourStr.match(ourRegex));
+
+let extractStr = "Extract the word 'coding' from this string.";
+let codingRegex = /coding/; 
+let result4 = extractStr.match(codingRegex); 
+console.log(result4);
+
+/* NOTE
+that the .match syntax is the "opposite" of the .test method you have been using thus far:
+
+'string'.match(/regex/);
+/regex/.test('string');
+*/
+
+// 6. Find More Than the First Match - With the global search flag: g.
+
+let testString = "Repeat, Repeat, Repeat";
+let repeatRegex = /Repeat/g;
+let result5 = testString.match(repeatRegex);
+console.log(result5);
+
+// 7. Match Anything with Wildcard Period . the dot 
+
+let humStr = "I'll hum a song";
+let hugStr = "Bear hug";
+let huRegex = /hu./;
+console.log(huRegex.test(humStr));
+console.log(huRegex.test(hugStr));
+
+// 8. Match Single Character with Multiple Possibilities with []
+
+let bigStr = "big";
+let bagStr = "bag";
+let bugStr = "bug";
+let bogStr = "bog";
+let bgRegex = /b[aiu]g/; // inside the brackets put the character class you want to match
+console.log(bigStr.match(bgRegex));
+console.log(bagStr.match(bgRegex));
+console.log(bugStr.match(bgRegex));
+console.log(bogStr.match(bgRegex));
+
+// Another example - finding all the vowels in a quote
+
+let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let vowelRegex = /[aeiou]/gi; 
+let result6 = quoteSample.match(vowelRegex);
+console.log(result6);
+
+// 9. Match Letters of the Alphabet
