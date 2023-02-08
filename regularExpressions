@@ -120,3 +120,29 @@ let result6 = quoteSample.match(vowelRegex);
 console.log(result6);
 
 // 9. Match Letters of the Alphabet
+let quoteSample2 = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/gi; 
+let result7 = quoteSample2.match(alphabetRegex); 
+console.log(result7);
+
+// 10. Match Numbers and Letters of the Alphabet
+
+let jennyStr = "Jenny8675309";
+let myRegex = /[a-z0-9]/ig;
+console.log(jennyStr.match(myRegex));
+
+let quoteSample3 = "Blueberry 3.141592653s are delicious.";
+let myRegex2 = /[h-s2-6]/gi; 
+let result8 = quoteSample3.match(myRegex2);
+console.log(result8);
+
+// 11. Match Single Characters Not Specified - negated character sets (^
+
+let quoteSample4 = "3 blind mice.";
+let myRegex3 = /[^0-9aeiou]/gi;
+let result9 = quoteSample4.match(myRegex3); 
+console.log(result9);
+
+// 12. Match Characters that Occur One or More Times
+
+
