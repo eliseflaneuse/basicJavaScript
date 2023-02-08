@@ -221,5 +221,71 @@ console.log(carrot);
 
 // Use getters and setters to Control Access to an Object
 
+class Book {
+  constructor(author) {
+    this._author = author;
+  }
+  // getter
+  get writer() {
+    return this._author;
+  }
+  // setter
+  set writer(updatedAuthor) {
+    this._author = updatedAuthor;
+  }
+}
+const novel = new Book('Elise Flaneuse');
+console.log(novel.writer);
+novel.writer = 'Fernando Gherini';
+console.log(novel.writer);
+
+//
+class Thermostat {
+  constructor(fahrenheit) {
+    this._fahrenheit =  fahrenheit;
+  };
+  get temperature() {
+    return (5/9) * (this._fahrenheit - 32);
+  };
+  set temperature(celsius) {
+    this._fahrenheit = (celsius * 9.0) / 5 + 32;
+  }
+}
+
+const thermos = new Thermostat(76); // Setting in Fahrenheit scale
+let temp = thermos.temperature; // 24.44 in Celsius
+thermos.temperature = 26;
+temp = thermos.temperature; // 26 in Celsius
+console.log(thermos);
+
+class Polygon {
+  constructor() {
+    this.name = 'Polygon';
+  }
+}
+
+const poly1 = new Polygon();
+
+console.log(poly1);
+
+// Use export to Share a Code Block
+export const add = (x, y) => {
+  return x + y;
+}
+
+||
+
+const add = (x, y) => {
+  return x + y;
+}
+
+export { add };
+
+// Reuse JavaScript Code Using import
+import { add, subtract } from './math_functions.js';
+
+// Use * to Import Everything from a File
+
+
 
 
