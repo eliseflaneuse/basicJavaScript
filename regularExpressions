@@ -9,11 +9,11 @@
 8. Match Single Character with Multiple Possibilities
 9. Match Letters of the Alphabet
 10. Match Numbers and Letters of the Alphabet
-11 .Match Single Characters Not Specified
+11. Match Single Characters Not Specified
 12. Match Characters that Occur One or More Times
 13. Match Characters that Occur Zero or More Times
 14. Find Characters with Lazy Matching
-15. Find One or More Criminals in a Hunt
+15. Find One or More Criminals in a Hunt X
 16. Match Beginning String Patterns
 17. Match Ending String Patterns
 18. Match All Letters and Numbers
@@ -25,12 +25,12 @@
 24. Match Non-Whitespace Characters
 25. Specify Upper and Lower Number of Matches
 26. Specify Only the Lower Number of Matches
-27.Specify Exact Number of Matches
+27. Specify Exact Number of Matches
 28. Check for All or None
 29. Positive and Negative Lookahead
 30. Check For Mixed Grouping of Characters
 31. Reuse Patterns Using Capture Groups
-32.Use Capture Groups to Search and Replace
+32. Use Capture Groups to Search and Replace
 33. Remove Whitespace from Start and End */
 
 // 1. Using the Test Method
@@ -44,6 +44,78 @@ Usually such patterns are used by string-searching algorithms for "find" or
 let testStr = "freeCodeCamp";
 let testRegex = /Code/;
 console.log(testRegex.test(testStr));
+
+/* Syntax:      /pattern/modifier(s);
+
+Modifiers are used to perform case-insensitive and global searches:
+
+Modifier	Description
+g	        Perform a global match (find all matches rather than stopping after the first match)
+i	        Perform case-insensitive matching
+m	        Perform multiline matching
+
+Brackets are used to find a range of characters:
+
+Expression	Description
+[abc]	    Find any character between the brackets
+[^abc]	    Find any character NOT between the brackets
+[0-9]	    Find any character between the brackets (any digit)
+[^0-9]	    Find any character NOT between the brackets (any non-digit)
+(x|y)	    Find any of the alternatives specified
+
+Metacharacters are characters with a special meaning:
+
+Metacharacter	Description
+.	            Find a single character, except newline or line terminator
+\w	            Find a word character
+\W	            Find a non-word character
+\d	            Find a digit
+\D	            Find a non-digit character
+\s	            Find a whitespace character
+\S	            Find a non-whitespace character
+\b	            Find a match at the beginning/end of a word, beginning like this: \bHI, end like this: HI\b
+\B	            Find a match, but not at the beginning/end of a word
+\0	            Find a NULL character
+\n	            Find a new line character
+\f	            Find a form feed character
+\r	            Find a carriage return character
+\t	            Find a tab character
+\v	            Find a vertical tab character
+\xxx	        Find the character specified by an octal number xxx
+\xdd	        Find the character specified by a hexadecimal number dd
+\udddd	        Find the Unicode character specified by a hexadecimal number dddd
+
+
+Quantifier	Description
+n+	        Matches any string that contains at least one n
+n*	        Matches any string that contains zero or more occurrences of n
+n?	        Matches any string that contains zero or one occurrences of n
+n{X}	    Matches any string that contains a sequence of X n's
+n{X,Y}	    Matches any string that contains a sequence of X to Y n's
+n{X,}	    Matches any string that contains a sequence of at least X n's
+n$	        Matches any string with n at the end of it
+^n	        Matches any string with n at the beginning of it
+?=n	        Matches any string that is followed by a specific string n
+?!n	        Matches any string that is not followed by a specific string n
+
+RegExp Object Properties
+Property	Description
+constructor	Returns the function that created the RegExp object's prototype
+global	    Checks whether the "g" modifier is set
+ignoreCase	Checks whether the "i" modifier is set
+lastIndex	Specifies the index at which to start the next match
+multiline	Checks whether the "m" modifier is set
+source	    Returns the text of the RegExp pattern
+
+RegExp Object Methods
+Method	    Description
+compile()	Deprecated in version 1.5. Compiles a regular expression
+exec()	    Tests for a match in a string. Returns the first match
+test()	    Tests for a match in a string. Returns true or false - only one we used so far
+toString()	Returns the string value of the regular expression
+
+*/
+
 
 // 2. Match Literal Strings - this property is case sensitive
 
@@ -136,7 +208,7 @@ let myRegex2 = /[h-s2-6]/gi;
 let result8 = quoteSample3.match(myRegex2);
 console.log(result8);
 
-// 11. Match Single Characters Not Specified - negated character sets (^
+// 11. Match Single Characters Not Specified - negated character sets (^) - [^thingsThatWillNotBeMatched]
 
 let quoteSample4 = "3 blind mice.";
 let myRegex3 = /[^0-9aeiou]/gi;
@@ -150,3 +222,200 @@ let myRegex4 = /s+/gi;
 let result10 = difficultSpelling.match(myRegex4);
 console.log(result10);
 
+//13. Match Characters that Occur Zero or More Times - With *
+
+const chewieQuote = 'Aaaaaaaaaaaaaaaarrrgh!';
+let chewieRegex = /Aa*/;
+let result11 = chewieQuote.match(chewieRegex);
+console.log(result11);
+
+// 14. Find Characters with Lazy Matching - With ? (finds the smallest part that fits the regex)
+
+let text = "<h1>Winter is coming</h1>";
+let myRegex5 = /<h*?1>/; 
+let result12 = text.match(myRegex5);
+console.log(result12);
+
+// 15 - X
+
+// 16. Match Beginning String Patterns with ^ OUTSIDE [] -  Outside of a character set, the caret is used to search for patterns at the beginning of strings.
+
+let firstString = "Ricky is first and can be found.";
+let firstRegex = /^Ricky/;
+console.log(firstRegex.test(firstString));
+let notFirst = "You can't find Ricky now.";
+console.log(firstRegex.test(notFirst));
+
+// 17. Match Ending String Patterns - With $
+
+let theEnding = "This is a never ending story";
+let storyRegex = /story$/;
+console.log(storyRegex.test(theEnding));
+let noEnding = "Sometimes a story will have to end";
+console.log(storyRegex.test(noEnding));
+
+// 18. Match All Letters and Numbers With /[A-Za-z0-9_]/ or it´s shorthand character class \w
+
+let longHand = /[A-Za-z0-9_]+/;
+let shortHand = /\w+/;
+let numbers = "42";
+let varNames = "important_var";
+console.log(longHand.test(numbers));
+console.log(shortHand.test(numbers));
+console.log(longHand.test(varNames));
+console.log(shortHand.test(varNames));
+
+// 19. Match Everything But Letters and Numbers With [^A-Za-z0-9_] or it's shorthand character class \W
+
+let shortHandN = /\W/;
+let numbers2 = "42%";
+let sentence = "Coding!";
+console.log(numbers2.match(shortHandN));
+console.log(sentence.match(shortHandN));
+
+// 20. Match All Numbers - With [0-9] or it's shorthand character class \d 
+
+let movieName = "2001: A Space Odyssey";
+let numRegex = /\d/g;
+let result13 = movieName.match(numRegex).length;
+console.log(result13);
+
+// 21. Match All Non-Numbers - With [^0-9] or \D
+
+let noNumRegex = /\D/g; 
+let result14 = movieName.match(noNumRegex).length;
+console.log(result14);
+
+// 22. Restrict Possible Usernames
+
+let username = "JackOfAllTrades";
+let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i;
+let result15 = userCheck.test(username);
+console.log(result15);
+
+/* 
+^ - start of input (lesson 16)
+[a-z] - first character is a letter
+[a-z]+ - following characters are letters
+\d*$ - input ends with 0 or more digits
+| - or
+^[a-z] - first character is a letter
+\d\d+ - following characters are 2 or more digits
+$ - end of input (lesson 17)
+*/
+
+// 23. Match Whitespace - With \s 
+
+let sample = "Whitespace is important in separating words";
+let countWhiteSpace = /\s/g; 
+let result16 = sample.match(countWhiteSpace);
+console.log(result16.length);
+
+// 24. Match Non-Whitespace Characters - With \S
+
+let countNonWhiteSpace = /\S/g; 
+let result17 = sample.match(countNonWhiteSpace);
+console.log(result17.length);
+
+// 25. Specify Upper and Lower Number of Matches - With  quantity specifiers {lowerNumber, upperNumber}
+
+/* Recall that you use the plus sign + to look for one or more characters 
+and the asterisk * to look for zero or more characters. */
+
+let A4 = "aaaah";
+let A2 = "aah";
+let multipleA = /a{3,5}h/;
+console.log(multipleA.test(A4));
+console.log(multipleA.test(A2));
+
+let ohStr = "Ohhh no";
+let ohRegex = /Oh{3,6} no/; 
+let result18 = ohRegex.test(ohStr);
+console.log(result18);
+
+// 26. Specify Only the Lower Number of Matches - To only specify the lower number of patterns, keep the first number followed by a comma {3,}
+
+let haStr = "Hazzzzah";
+let haRegex = /Haz{4,}ah/; 
+let result19 = haRegex.test(haStr);
+console.log(result19);
+
+// 27. Specify Exact Number of Matches { } with only one number and no comma
+
+let timStr = "Timmmmber";
+let timRegex = /Tim{4}ber/; 
+let result20 = timRegex.test(timStr);
+console.log(result20);
+
+// 28. Check for All or None - With ?
+
+let american = "color";
+let british = "colour";
+let rainbowRegex= /colou?r/;
+console.log(rainbowRegex.test(american));
+console.log(rainbowRegex.test(british));
+
+// 29. Positive and Negative Lookahead - With (?=...) and (?!...)
+
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{6})(?=\w*\d{2})/;
+let result21 = pwRegex.test(sampleWord);
+console.log(result21);
+
+// 30. Check For Mixed Grouping of Characters - With (option1|oprtion2)
+
+let testPum = "Pumpkin";
+let testPen = "Penguin"
+let testRegex2 = /P(engu|umpk)in/;
+console.log(testRegex2.test(testPum));
+console.log(testRegex2.test(testPen));
+
+let presString = "Eleanor Roosevelt";
+let myRegex6 = /(Eleanor?|Franklin?) ([A-Z].*)?Roosevelt/; // See line 93
+let result22 = myRegex.test(presString); 
+console.log(result22);
+
+// 31. Reuse Patterns Using Capture Groups - 
+
+let repeatStr = "row row row your boat";
+let repeatRegex2 = /(\w+) \1 \1/;
+console.log(repeatRegex2.test(repeatStr)); 
+console.log(repeatStr.match(repeatRegex2)); 
+
+
+let repeatNum = "42 42 42";
+let reRegex = /^(\d+) \1 \1$/; // Lesson 16 and 17 to match expecifically 3 times
+let result23 = reRegex.test(repeatNum);
+console.log(result23);
+
+// 32. Use Capture Groups to Search and Replace - With .replace(pattern, replacement) and capture groups ($).
+/*  Searching is useful.
+However, you can make searching even more powerful when it also changes (or replaces) the text you match.
+You can search and replace text in a string using .replace() on a string. 
+The inputs for .replace() is first the regex pattern you want to search for. 
+The second parameter is the string to replace the match or a function to do something.
+Syntax: 
+replace(pattern, replacement)
+
+ */
+
+let wrongText = "The sky is silver.";
+let silverRegex = /silver/;
+wrongText.replace(silverRegex, "blue");
+console.log(wrongText.replace(silverRegex, "blue"));
+console.log(wrongText); // Looks like it replace the variable only when called.
+console.log("Code Camp".replace(/(\w+)\s(\w+)/, '$2 $1')); // You can also access capture groups in the replacement string with dollar signs ($).
+
+let str = "one two three";
+let fixRegex = /(\w+)\s(\w+)\s(\w+)/; 
+let replaceText = "$3 $2 $1"; 
+let result24 = str.replace(fixRegex, replaceText);
+console.log(result24);
+
+// 33. Remove Whitespace from Start and End
+
+let hello = "   Hello, World!  ";
+let wsRegex = /^\s+|\s+$/g; 
+let result25 = hello.replace(wsRegex, ''); 
+console.log(hello.match(wsRegex));
+console.log(result25);
