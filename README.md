@@ -142,3 +142,38 @@ Complete a Promise with resolve and reject <br>
 Handle a Fulfilled Promise with then <br>
 Handle a Rejected Promise with catch <br>
 
+<h3>Regular Expressions</h3>
+
+1. Using the Test Method <br>
+2. Match Literal Strings<br>
+3. Match a Literal String with Different Possibilities<br>
+4. Ignore Case While Matching<br>
+5. Extract Matches<br>
+6. Find More Than the First Match<br>
+7. Match Anything with Wildcard Period<br>
+8. Match Single Character with Multiple Possibilities<br>
+9. Match Letters of the Alphabet<br>
+10. Match Numbers and Letters of the Alphabet<br>
+11 .Match Single Characters Not Specified<br>
+12. Match Characters that Occur One or More Times<br>
+13. Match Characters that Occur Zero or More Times<br>
+14. Find Characters with Lazy Matching<br>
+15. Find One or More Criminals in a Hunt<br>
+16. Match Beginning String Patterns<br>
+17. Match Ending String Patterns<br>
+18. Match All Letters and Numbers<br>
+19. Match Everything But Letters and Numbers<br>
+20. Match All Numbers<br>
+21. Match All Non-Numbers<br>
+22. Restrict Possible Usernames<br>
+23. Match Whitespace<br>
+24. Match Non-Whitespace Characters<br>
+25. Specify Upper and Lower Number of Matches<br>
+26. Specify Only the Lower Number of Matches<br>
+27.Specify Exact Number of Matches<br>
+28. Check for All or None<br>
+29. Positive and Negative Lookahead<br>
+30. Check For Mixed Grouping of Characters<br>
+31. Reuse Patterns Using Capture Groups<br>
+32.Use Capture Groups to Search and Replace<br>
+33. Remove Whitespace from Start and End <br>
