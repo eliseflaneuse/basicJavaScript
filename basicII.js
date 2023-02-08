@@ -286,6 +286,68 @@ import { add, subtract } from './math_functions.js';
 
 // Use * to Import Everything from a File
 
+import * as myMathModule from "./math_functions.js";
+
+
+// You can acess the funtions inside the object as any other object property
+
+myMathModule.add(2,3);
+myMathModule.subtract(5,3);
+
+// Create an Export Fallback with export default
+export default function add(x, y) {
+  return x + y;
+}
+
+export default function(x, y) {
+  return x + y;
+}
+
+// Import a Default Export
+
+import add from "./math_functions.js";
+
+// Create a JavaScript Promise
+const myPromise = new Promise((resolve, reject) => {
+
+});
+
+// Complete a Promise with resolve and reject
+const myPromise = new Promise((resolve, reject) => {
+  if(condition here) {
+    resolve("Promise was fulfilled");
+  } else {
+    reject("Promise was rejected");
+  }
+});
+
+// Handle a Fulfilled Promise with then
+myPromise.then(result => {
+  
+});
+
+//Example: 
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer is set to true to represent a successful response from a server
+  let responseFromServer = true;
+    
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {  
+    reject("Data not received");
+  }
+});
+
+makeServerRequest.then(result => {console.log(result)});
+
+// Handle a Rejected Promise with catch
+myPromise.catch(error => {
+  
+});
+
+// Example following line 330 - 341
+
+makeServerRequest.catch(error => {console.log(error)});
 
 
 
