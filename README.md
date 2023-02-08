@@ -130,3 +130,15 @@ Create Strings using Template Literals <br>
 Write Concise Object Literal Declarations Using Object Property Shorthand <br>
 Write Concise Declarative Functions with ES6 <br>
 Use class Syntax to Define a Constructor Function <br>
+Use getters and setters to Control Access to an Object <br>
+Create a Module Script <br>
+Use export to Share a Code Block <br>
+Reuse JavaScript Code Using import <br>
+Use * to Import Everything from a File <br>
+Create an Export Fallback with export default <br>
+Import a Default Export <br>
+Create a JavaScript Promise <br>
+Complete a Promise with resolve and reject <br>
+Handle a Fulfilled Promise with then <br>
+Handle a Rejected Promise with catch <br>
+
