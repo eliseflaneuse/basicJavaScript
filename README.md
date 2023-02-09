@@ -177,3 +177,23 @@ Handle a Rejected Promise with catch <br>
 31. Reuse Patterns Using Capture Groups<br>
 32. Use Capture Groups to Search and Replace<br>
 33. Remove Whitespace from Start and End <br>
+
+<h3>Basic Data Structures</h3>
+
+1. Remove Items from an Array with pop() and shift()
+2. Remove Items Using splice()
+3. Add Items Using splice()
+4. Copy Array Items Using slice()
+5. Copy an Array with the Spread Operator
+6. Combine Arrays with the Spread Operator
+7. Check For The Presence of an Element With indexOf()
+8. Iterate Through All an Array's Items Using For Loops
+9. Create complex multi-dimensional arrays
+10. Add Key-Value Pairs to JavaScript Objects
+11. Modify an Object Nested Within an Object
+12. Access Property Names with Bracket Notation
+13. Use the delete Keyword to Remove Object Properties
+14. Check if an Object has a Property
+15. Iterate Through the Keys of an Object with a for...in Statement
+16. Generate an Array of All Object Keys with Object.keys()
+17. Modify an Array Stored in an Object
