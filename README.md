@@ -4,16 +4,16 @@
 
 <h3>What is included?<br> Basic I</h3>
 
-Comment Your JavaScript Code <br>
-Declare JavaScript Variables <br>
-Storing Values with the Assignment Operator <br>
-Assigning the Value of One Variable to Another <br>
-Initializing Variables with the Assignment Operator <br>
-Declare String Variables <br>
-Understanding Uninitialized Variables <br> 
-Understanding Case Sensitivity in Variables <br>
-Explore Differences Between the var and let Keywords <br>
-Declare a Read-Only Variable with the const Keyword <br>
+1. Comment Your JavaScript Code <br>
+2. Declare JavaScript Variables <br>
+3. Storing Values with the Assignment Operator <br>
+4. Assigning the Value of One Variable to Another <br>
+5. Initializing Variables with the Assignment Operator <br>
+6. Declare String Variables <br>
+7. Understanding Uninitialized Variables <br> 
+8. Understanding Case Sensitivity in Variables <br>
+9. Explore Differences Between the var and let Keywords <br>
+10. Declare a Read-Only Variable with the const Keyword <br>
 Add Two Numbers with JavaScript <br>
 Subtract One Number from Another with JavaScript <br>
 Multiply Two Numbers with JavaScript <br>
