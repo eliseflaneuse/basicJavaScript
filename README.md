@@ -14,26 +14,26 @@
 8. Understanding Case Sensitivity in Variables <br>
 9. Explore Differences Between the var and let Keywords <br>
 10. Declare a Read-Only Variable with the const Keyword <br>
-Add Two Numbers with JavaScript <br>
-Subtract One Number from Another with JavaScript <br>
-Multiply Two Numbers with JavaScript <br>
-Divide One Number by Another with JavaScript <br>
-Increment a Number with JavaScript <br>
-Decrement a Number with JavaScript <br>
-Create Decimal Numbers with JavaScript <br>
-Multiply Two Decimals with JavaScript <br>
-Divide One Decimal by Another with JavaScript <br>
-Finding a Remainder in JavaScript <br>
-Compound Assignment With Augmented Addition <br>
-Compound Assignment With Augmented Subtraction <br>
-Compound Assignment With Augmented Multiplication <br>
-Compound Assignment With Augmented Division <br>
-Escaping Literal Quotes in Strings <br>
-Quoting Strings with Single Quotes <br>
-Escape Sequences in Strings <br>
-Concatenating Strings with Plus Operator <br>
-Concatenating Strings with the Plus Equals Operator <br>
-Constructing Strings with Variables <br>
+11. Add Two Numbers with JavaScript <br>
+12. Subtract One Number from Another with JavaScript <br>
+13. Multiply Two Numbers with JavaScript <br>
+14. Divide One Number by Another with JavaScript <br>
+15. Increment a Number with JavaScript <br>
+16. Decrement a Number with JavaScript <br>
+17. Create Decimal Numbers with JavaScript <br>
+18. Multiply Two Decimals with JavaScript <br>
+19. Divide One Decimal by Another with JavaScript <br>
+20. Finding a Remainder in JavaScript <br>
+21. Compound Assignment With Augmented Addition <br>
+22. Compound Assignment With Augmented Subtraction <br>
+23. Compound Assignment With Augmented Multiplication <br>
+24. Compound Assignment With Augmented Division <br>
+25. Escaping Literal Quotes in Strings <br>
+26. Quoting Strings with Single Quotes <br>
+27. Escape Sequences in Strings <br>
+28. Concatenating Strings with Plus Operator <br>
+29. Concatenating Strings with the Plus Equals Operator <br>
+30. Constructing Strings with Variables <br>
 Appending Variables to Strings <br>
 Find the Length of a String <br>
 Use Bracket Notation to Find the First Character in a String <br>
