@@ -190,9 +190,123 @@ console.log(harryPotterCharacter);
   
 // 11. Modify an Object Nested Within an Object
 
-// 12.  Access Property Names with Bracket Notation
+let spaceShip = {
+    ncc: 1701,
+    name: 'USS Enterprise',
+    data: {
+      totalCrew: 99,
+      comandCrew: 10,
+      helmsman: {
+        active: 67,
+        docked: 13,
+      }
+    }
+  };
+
+spaceShip.data.helmsman.docked = 10;
+console.log(spaceShip);
+
+// 12.  Access Property Names with Bracket Notation []
+
+let foods = {
+    apples: 25,
+    oranges: 32,
+    plums: 28,
+    bananas: 13,
+    grapes: 35,
+    strawberries: 27
+  };
+  
+function checkInventory(scannedItem) {
+    return foods[scannedItem];
+  }
+
+console.log(checkInventory("apples"));
+
 // 13. Use the delete Keyword to Remove Object Properties
+
+delete foods.oranges;
+delete foods.plums;
+delete foods.strawberries;
+
+console.log(foods);
+
 // 14. Check if an Object has a Property
+
+console.log(spaceShip.hasOwnProperty('ncc'));
+console.log('ncc' in spaceShip);
+
+let users = {
+  Alan: {
+    age: 27,
+    online: true
+  },
+  Jeff: {
+    age: 32,
+    online: true
+  },
+  Sarah: {
+    age: 48,
+    online: true
+  },
+  Ryan: {
+    age: 19,
+    online: true
+  }
+};
+
+function isEveryoneHere(userObj) {
+  
+  return ["Alan", "Jeff", "Sarah", "Ryan"].every(name =>
+    userObj.hasOwnProperty(name)
+  );
+  /* || 
+  return userObj.hasOwnProperty("Alan") &&
+    userObj.hasOwnProperty("Jeff") &&
+    userObj.hasOwnProperty("Sarah") &&
+    userObj.hasOwnProperty("Ryan");
+
+  */
+}
+console.log(isEveryoneHere(users));
+
 // 15. Iterate Through the Keys of an Object with a for...in Statement
+
+/* Sometimes you may need to iterate through all the keys within an object. 
+This requires a specific syntax in JavaScript called a for...in statement. 
+*/
+
+for (let user in users) {
+  console.log(user);
+}
+
+function countOnline(usersObj) {
+  let number = 0;
+  for (let user in usersObj) { 
+    if (usersObj[user].online === true) {
+      number++;
+    }
+  }
+  return number // Pay attention to where you put the return (you cannot use it inside a for loop or it will stop it)
+}
+
+console.log(countOnline(users));
+
 // 16. Generate an Array of All Object Keys with Object.keys()
-// 17. Modify an Array Stored in an Object
+
+function getArrayOfUsers(obj) {
+  return Object.keys(obj)
+}
+
+console.log(getArrayOfUsers(users));
+
+// 17. Modify an Array Stored in an Object (Use dot notation)
+
+function addFriend(userObj, friend) {
+  
+  userObj.data.friends.push(friend);
+  return userObj.data.friends;
+
+}
+
+console.log(addFriend(user, 'Pete'));
