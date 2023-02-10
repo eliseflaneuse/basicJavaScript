@@ -34,26 +34,26 @@
 28. Concatenating Strings with Plus Operator <br>
 29. Concatenating Strings with the Plus Equals Operator <br>
 30. Constructing Strings with Variables <br>
-Appending Variables to Strings <br>
-Find the Length of a String <br>
-Use Bracket Notation to Find the First Character in a String <br>
-Understand String Immutability <br>
-Use Bracket Notation to Find the Nth Character in a String <br>
-Use Bracket Notation to Find the Last Character in a String <br>
-Use Bracket Notation to Find the Nth-to-Last Character in a String <br>
-Store Multiple Values in one Variable using JavaScript Arrays <br>
-Nest one Array within Another Array <br>
-Access Array Data with Indexes <br>
-Modify Array Data With Indexes <br>
-Access Multi-Dimensional Arrays With Indexes <br>
-Manipulate Arrays With push() <br>
-Manipulate Arrays With pop() <br>
-Manipulate Arrays With shift() <br>
-Manipulate Arrays With unshift() <br>
-Write Reusable JavaScript with Functions <br>
-Passing Values to Functions with Arguments <br>
-Return a Value from a Function with Return <br>
-Global Scope and Functions <br>
+31. Appending Variables to Strings <br>
+32. Find the Length of a String <br>
+33. Use Bracket Notation to Find the First Character in a String <br>
+34. Understand String Immutability <br>
+35. Use Bracket Notation to Find the Nth Character in a String <br>
+36. Use Bracket Notation to Find the Last Character in a String <br>
+37. Use Bracket Notation to Find the Nth-to-Last Character in a String <br>
+38. Store Multiple Values in one Variable using JavaScript Arrays <br>
+39. Nest one Array within Another Array <br>
+40. Access Array Data with Indexes <br>
+41. Modify Array Data With Indexes <br>
+42. Access Multi-Dimensional Arrays With Indexes <br>
+43. Manipulate Arrays With push() <br>
+44. Manipulate Arrays With pop() <br>
+45. Manipulate Arrays With shift() <br>
+46. Manipulate Arrays With unshift() <br>
+47. Write Reusable JavaScript with Functions <br>
+48. Passing Values to Functions with Arguments <br>
+49. Return a Value from a Function with Return <br>
+50. Global Scope and Functions <br>
 Local Scope and Functions <br>
 Global vs. Local Scope in Functions <br>
 Understanding Undefined Value returned from a Function <br>
