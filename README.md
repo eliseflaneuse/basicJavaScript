@@ -54,18 +54,18 @@
 48. Passing Values to Functions with Arguments <br>
 49. Return a Value from a Function with Return <br>
 50. Global Scope and Functions <br>
-Local Scope and Functions <br>
-Global vs. Local Scope in Functions <br>
-Understanding Undefined Value returned from a Function <br>
-Assignment with a Returned Value <br>
-Understanding Boolean Values <br>
-Use Conditional Logic with If Statements <br>
-Comparison with the Equality Operator <br>
-Comparison with the Strict Equality Operator <br>
-Practice comparing different values <br>
-Comparison with the Inequality Operator <br>
-Comparison with the Strict Inequality Operator <br>
-Comparison with the Greater Than Operator <br>
+51. Local Scope and Functions <br>
+52. Global vs. Local Scope in Functions <br>
+53. Understanding Undefined Value returned from a Function <br>
+54. Assignment with a Returned Value <br>
+55. Understanding Boolean Values <br>
+56. Use Conditional Logic with If Statements <br>
+57. Comparison with the Equality Operator <br>
+58. Comparison with the Strict Equality Operator <br>
+59. Practice comparing different values <br>
+60. Comparison with the Inequality Operator <br>
+61. Comparison with the Strict Inequality Operator <br>
+62. Comparison with the Greater Than Operator <br>
 Comparison with the Greater Than Or Equal To Operator <br>
 Comparison with the Less Than Operator <br>
 Comparison with the Less Than Or Equal To Operator <br>
