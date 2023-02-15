@@ -176,3 +176,88 @@ function titleCase(str) {
 }
 
 console.log(titleCase("I'm a little tea pot"));
+
+// 12. Slice and Splice
+
+const months = ['Jan', 'March', 'April', 'June'];
+months.splice(1, 0, 'Feb');
+console.log(months);
+
+const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+console.log(animals.slice(2));
+
+console.log(animals.slice(2, 4));
+
+console.log(animals.slice(-2));
+
+console.log(animals.slice(2, -1));
+
+console.log(animals.slice());
+
+function frankenSplice(arr1, arr2, n) {
+  const localArr = arr2.slice();
+  localArr.splice(n, 0, ...arr1); // rest parameter
+  return localArr;
+}
+
+console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1));
+
+// 13. Falsy Bouncer
+
+function bouncer(arr) {
+  const filteredArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i]) filteredArr.push(arr[i]);
+  }
+  return filteredArr;
+};
+
+console.log(bouncer([7, "ate", "", false, 9]));
+
+// 14. Where do I Belong
+
+function getIndexToIns(arr, num) {
+  arr.sort((a, b) => a - b); // sort() method with a compare function as a paramenter => https://www.javascripttutorial.net/javascript-array-sort/#:~:text=The%20sort()%20method%20allows,first%20and%20largest%20value%20last.
+  for (let i = 0; i < arr.length; i++) { // iterate throught the array
+    if (arr[i] >= num) return i; // check for the first number that is bigger then num
+  }
+
+  return arr.length;
+  
+}
+
+getIndexToIns([40, 60], 50);
+
+// 15. Mutations
+
+function mutation(arr) {
+  const test = arr[1].toLowerCase();
+  const target = arr[0].toLowerCase();
+  for (let i = 0; i < test.length; i++) {
+    if (target.indexOf(test[i]) < 0) return false;
+  }
+  return true;
+}
+
+mutation(["hello", "hey"]);
+
+// 16. Chunky Monkey
+
+function chunkArrayInGroups(arr, size) {
+  let temp = [];
+  const result = [];
+
+  for (let a = 0; a < arr.length; a++) {
+    if (a % size !== size - 1) temp.push(arr[a]);
+    else {
+      temp.push(arr[a]);
+      result.push(temp);
+      temp = [];
+    }
+  }
+
+  if (temp.length !== 0) result.push(temp);
+  return result;
+}
+
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
