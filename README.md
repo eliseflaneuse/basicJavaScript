@@ -66,14 +66,14 @@
 60. Comparison with the Inequality Operator <br>
 61. Comparison with the Strict Inequality Operator <br>
 62. Comparison with the Greater Than Operator <br>
-Comparison with the Greater Than Or Equal To Operator <br>
-Comparison with the Less Than Operator <br>
-Comparison with the Less Than Or Equal To Operator <br>
-Comparisons with the Logical And Operator <br>
-Comparisons with the Logical Or Operator <br>
-Introducing Else Statements <br>
-Introducing Else If Statements <br>
-Logical Order in If Else Statements <br>
+63. Comparison with the Greater Than Or Equal To Operator <br>
+64. Comparison with the Less Than Operator <br>
+65. Comparison with the Less Than Or Equal To Operator <br>
+66. Comparisons with the Logical And Operator <br>
+67. Comparisons with the Logical Or Operator <br>
+68. Introducing Else Statements <br>
+69. Introducing Else If Statements <br>
+70. Logical Order in If Else Statements <br>
 Chaining If Else Statements <br>
 Adding a Default Option in Switch Statements <br>
 Multiple Identical Options in Switch Statements <br>
