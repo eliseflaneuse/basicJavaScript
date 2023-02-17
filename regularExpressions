@@ -116,7 +116,6 @@ toString()	Returns the string value of the regular expression
 
 */
 
-
 // 2. Match Literal Strings - this property is case sensitive
 
 let waldoIsHiding = "Somewhere Waldo is hiding in this text.";
