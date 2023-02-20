@@ -418,5 +418,3 @@ let wsRegex = /^\s+|\s+$/g;
 let result25 = hello.replace(wsRegex, ''); 
 console.log(hello.match(wsRegex));
 console.log(result25);
-
-
