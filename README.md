@@ -4,6 +4,7 @@
 
 <h3>What is included?<br> Basic I</h3>
 
+<ol>
 1. Comment Your JavaScript Code <br>
 2. Declare JavaScript Variables <br>
 3. Storing Values with the Assignment Operator <br>
@@ -109,6 +110,7 @@ Use the Conditional (Ternary) Operator <br>
 Use Multiple Conditional (Ternary) Operators <br>
 Use Recursion to Create a Countdown <br>
 Use Recursion to Create a Range of Numbers <br>
+</ol>
 
 <h3>Basic II</h3>
 
